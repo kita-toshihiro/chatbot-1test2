@@ -42,7 +42,7 @@ else:
         # Generate a response using the Anthropic API.
         with st.chat_message("assistant"):
             with client.messages.stream(
-                model="claude-3-5-haiku-20241022",
+                model="claude-haiku-5-5",
                 max_tokens=1024,
                 messages=[
                     {"role": m["role"], "content": m["content"]}
